@@ -1,4 +1,4 @@
-# Tutoriel : Installer MySQL etCréer une Base de Données pour un CRUD avec Spring-Boot
+# Installer MySQL et Créer une Base de Données
 
 Dans ce tutoriel, nous allons apprendre à installer **MySQL** sur Windows et à créer une base de données appelée `product_db`, que nous utiliserons plus tard pour un projet **CRUD** avec **Spring Boot**. Suivez ces étapes avant de passer à la configuration de Spring Boot dans la prochaine vidéo.
 
