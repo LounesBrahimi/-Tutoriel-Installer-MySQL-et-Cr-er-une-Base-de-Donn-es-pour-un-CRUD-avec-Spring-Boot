@@ -1,7 +1,8 @@
+
 # Configurer Spring Boot avec Spring Initializr et Connexion à MySQL pour un CRUD de Produits
 
 ## Introduction
-Dans ce tutoriel, nous allons créer une application CRUD pour la gestion des produits avec **Spring Boot** et **MySQL**. Nous allons commencer par générer un projet Spring Boot à l'aide de **Spring Initializr**, puis nous configurerons la connexion à une base de données MySQL.
+Dans ce tutoriel, nous allons créer une application CRUD pour la gestion des produits avec **Spring Boot**, **Java**, et **MySQL**. Nous allons générer un projet Spring Boot à l'aide de **Spring Initializr**, configurer Maven, et se connecter à une base de données MySQL.
 
 ## Étapes
 
@@ -9,12 +10,18 @@ Dans ce tutoriel, nous allons créer une application CRUD pour la gestion des pr
 
 1. Rendez-vous sur [Spring Initializr](https://start.spring.io/).
 2. Remplissez les champs suivants :
+   - **Project** : Maven Project
+   - **Language** : Java
+   - **Spring Boot version** : 3.x.x (latest)
    - **Group** : `com.example`
    - **Artifact** : `productcrud`
+   - **Name** : `productcrud`
+   - **Packaging** : Jar
+   - **Java version** : 17
 3. Sélectionnez les dépendances suivantes :
-   - **Spring Web**
-   - **Spring Data JPA**
-   - **MySQL Driver**
+   - **Spring Web** (pour l'API REST)
+   - **Spring Data JPA** (pour la persistance)
+   - **MySQL Driver** (pour se connecter à MySQL)
 4. Cliquez sur **Generate** pour télécharger le projet.
 5. Importez le projet dans votre IDE préféré (IntelliJ IDEA, Eclipse).
 
@@ -36,16 +43,15 @@ spring.jpa.show-sql=true
 ### 3. Tester la Connexion
 
 1. Exécutez l'application Spring Boot dans votre IDE.
-2. Vérifiez dans la console que la connexion à la base de données MySQL a bien été établie.
-3. Vous devriez voir un message dans les logs confirmant la connexion réussie.
+2. Vérifiez dans la console que la connexion à la base de données MySQL a bien été établie. Vous devriez voir les logs de démarrage avec `HikariPool-1 - Start completed.`
 
 ### 4. Explication de JPA et Hibernate
 
-**JPA** (Java Persistence API) est une spécification qui permet de mapper des objets Java sur des tables dans une base de données relationnelle. **Hibernate** est l'implémentation de JPA utilisée par défaut dans Spring Boot.
+**JPA** (Java Persistence API) permet de gérer la persistance des données en utilisant des entités Java. **Hibernate**, l'implémentation par défaut de JPA dans Spring Boot, gère la persistance des objets Java dans la base de données MySQL et inversement.
 
 ## Prochaine Étape
 
-Dans la prochaine étape, nous allons implémenter les opérations CRUD (Create, Read, Update, Delete) pour manipuler les données des produits dans la base de données MySQL.
+Dans la prochaine vidéo, nous implémenterons les opérations CRUD (Create, Read, Update, Delete) pour gérer les produits dans MySQL via Spring Boot.
 
 ---
 
