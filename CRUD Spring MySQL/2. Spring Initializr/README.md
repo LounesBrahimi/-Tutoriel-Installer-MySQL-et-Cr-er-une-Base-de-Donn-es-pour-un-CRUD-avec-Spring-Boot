@@ -31,10 +31,19 @@ Dans ce tutoriel, nous allons créer une application CRUD pour la gestion des pr
 2. Ajoutez les informations de connexion à votre base de données MySQL :
 
 ```properties
+# URL de la base de données MySQL locale
 spring.datasource.url=jdbc:mysql://localhost:3306/product_db
+
+# Nom d'utilisateur pour se connecter à MySQL
 spring.datasource.username=root
+
+# Mot de passe pour l'utilisateur MySQL
 spring.datasource.password=votre_mot_de_passe
+
+# Hibernate ajuste automatiquement les tables dans la base de données
 spring.jpa.hibernate.ddl-auto=update
+
+# Affiche les requêtes SQL générées dans la console
 spring.jpa.show-sql=true
 ```
 
